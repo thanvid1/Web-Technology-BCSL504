@@ -1,0 +1,28 @@
+*{
+background-color:white;
+color:black;
+}
+
+#head-container{
+font-size:25px;
+}
+.sec-container{
+display:block;
+}
+.options{
+display:flex;
+flex-direction: column;
+width:150px; 
+gap:10px;
+}
+button{
+border-radius:0.5rem;
+height:45px;
+}
+button:hover{
+opacity:50%;
+}
+h3{
+color:black;
+font-family:Franklin Gothic Medium;
+}
