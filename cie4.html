@@ -1,0 +1,151 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #af6d6d;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #fcfbfb;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 60%;
+            margin: 0 auto;
+            background-color: #c5a0a0;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        td {
+            padding: 15px;
+            font-size: 18px;
+            color: #ffffff;
+        }
+        th {
+            text-align: left;
+            padding: 15px;
+            background-color: #7b1616;
+            color: white;
+            font-size: 20px;
+        }
+        input[type="text"],input[type="number"], input[type="email"], input[type="password"], 
+        select, textarea {
+            width: 75%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: #7b1616;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color:#7b1616;
+        }
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .radio, .checkbox {
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <h1>Thanvi D Acharya(4MW23CS174)</h1>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <th colspan="2">Personal Information</th>
+            </tr>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="firstname" placeholder="Enter your first name"></td>
+            </tr>
+            <tr>
+                <td>Middle Name:</td>
+                <td><input type="text" name="middlename" placeholder="Enter your middle name"></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="lastname" placeholder="Enter your last name"></td>
+            </tr>
+            <tr>
+                <td>Phone number:</td>
+                <td><input type="number" name="phone" placeholder="Enter your phone number"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" placeholder="Enter your email"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" placeholder="Enter your password"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male" class="radio"> Male
+                    <input type="radio" name="gender" value="female" class="radio"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Father's Name:</td>
+                <td><input type="text" name="fathername" placeholder="Enter your father's name"></td>
+            </tr>
+            <tr>
+                <td>Mother's Name:</td>
+                <td><input type="text" name="mothername" placeholder="Enter your mother's name"></td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td>
+                    <select name="country">
+                        <option value="in">India</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="us">United States</option>
+                        <option value="ca">Canada</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Hobbies:</td>
+                <td>
+                    <input type="checkbox" name="hobbies" value="reading" class="checkbox"> Reading<br>
+                    <input type="checkbox" name="hobbies" value="travelling" class="checkbox"> Travelling<br>
+                    <input type="checkbox" name="hobbies" value="sports" class="checkbox"> Sports<br>
+                    <input type="checkbox" name="hobbies" value="painting" class="checkbox"> Painting<br>
+                    <input type="checkbox" name="hobbies" value="sketching" class="checkbox"> Sketching<br>
+                    <input type="checkbox" name="hobbies" value="movies" class="checkbox"> Watching movies<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><textarea name="address" placeholder="Enter your address"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
