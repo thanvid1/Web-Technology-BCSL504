@@ -1,45 +1,88 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CIE-3</title>
-<link rel="stylesheet" href="style1.css">
+  <meta charset="UTF-8">
+  <title>Stylesheet Switcher</title>
+  <!-- Link tags for stylesheets -->
+  <link id="style1" rel="stylesheet" href="cie3style1.css" disabled>
+  <link id="style2" rel="stylesheet" href="cie3style2.css" disabled>
+  <link id="style3" rel="stylesheet" href="cie3style3.css" disabled>
+  <link id="style4" rel="stylesheet" href="cie3style4.css" disabled>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    button {
+      border-radius:0.5rem;
+height:30px;
+padding:2px;
+    }
+    .options{
+ background-color: #b4afb6;
+      position: fixed;
+      top: 20px;
+      right: 50px;
+      padding: 10px ;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.279);
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap:2px;
+      width: 150px;
+      height:200px;
+      justify-content: center;
+}
+
+  </style>
 </head>
 <body>
-
-<div id="head-container">
-<h1>Welcome to Home Page</h1>
-<h2>Use the menu to select different Sytlesheets</h2>
+    <div id="head-container">
+<h2>Welcome to Home Page</h2>
+<p>Use the menu to select different Stylesheets</p>
 </div>
 
 <div class="sec-container">
 <h3>Same Page Different Stylesheets</h3>
 <p>This is a demonstration of how different stylesheets can change the layout of your HTML page.You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
-<a href="style1.css">Stylesheet1</a>,<a href="style2.css">Stylesheet2</a>,<a href="style3.css">Stylesheet3</a> ,<a href="style4.css">Stylesheet4</a>.</p>
+<a href="#" onclick="setStyle('style1')">Stylesheet1</a>,<a href="#" onclick="setStyle('style2')">Stylesheet2</a>,<a href="#" onclick="setStyle('style3')">Stylesheet3</a> ,<a href="#" onclick="setStyle('style4')">Stylesheet4</a>.</p>
+<br>
+<br>
 <br>
 <h3>No Styles</h3>
 <p>This is a demonstration of how different stylesheets can change the layout of your HTML page.You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
-<a href="style0.css">No Stylesheet</a>.</p>
+<a href="#" onclick="removeStyles()">No Stylesheet</a>.</p>
 <div class="options">
-<button class="s1" >Stylesheet1</button>
-<button class="s2">Stylesheet 2</button>
-<button class="s3">Stylesheet 3</button>
-<button class="s4">Stylesheet 4</button>
-<button class="s0">No Stylesheet</button>
-
-<input type="submit" value="Register">
-                    <input type="reset" value="Reset">
-</div>
+  <!-- <h6>Choose a Stylesheet</h6> -->
+  <button onclick="setStyle('style1')">Style 1</button>
+  <button onclick="setStyle('style2')">Style 2</button>
+  <button onclick="setStyle('style3')">Style 3</button>
+  <button onclick="setStyle('style4')">Style 4</button>
+  <button onclick="removeStyles()">No Stylesheet</button>
 </div>
 <div class="third-container">
 <h3>Side-Bar</h3>
 <p>This is a demonstration of how different stylesheets can change the layout of your HTML page.You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
 Stylesheet1,Stylesheet2 , Stylesheet3 ,Stylesheet4.</p>
 </div>
+  <script>
+    function setStyle(styleId) {
+      const styles = ['style1', 'style2', 'style3', 'style4'];
+      styles.forEach(id => {
+        document.getElementById(id).disabled = id !== styleId;
+      });
+    }
 
-
-</div>
+    function removeStyles() {
+      ['style1', 'style2', 'style3', 'style4'].forEach(id => {
+        document.getElementById(id).disabled = true;
+      });
+    }
+  </script>
 </body>
 </html>
+
+
+
+
