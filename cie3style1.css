@@ -9,7 +9,7 @@ padding:10px;
 }
 .sec-container{
 display:block;
-backkground-color:white;
+background-color:white;
 color:black;
 padding:10px;
 }
@@ -17,18 +17,16 @@ padding:10px;
 background-color:#A78FC2;
 padding:10px;
 }
-.options{
-display:flex;
-flex-direction: column;
-width:150px; 
-gap:10px;
-}
 
 button{
 border-radius:0.5rem;
-height:45px;
+justify-content: center;
+height:30px;
+padding:2px;
+width: 100%;
 background-color:#8368A0;
 color:white;
+
 }
 button:hover{
 opacity:50%;
