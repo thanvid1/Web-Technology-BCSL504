@@ -9,15 +9,11 @@ font-size:25px;
 .sec-container{
 display:block;
 }
-.options{
-display:flex;
-flex-direction: column;
-width:150px; 
-gap:10px;
-}
+
 button{
 border-radius:0.5rem;
-height:45px;
+height:30px;
+padding:2px;
 }
 button:hover{
 opacity:50%;
