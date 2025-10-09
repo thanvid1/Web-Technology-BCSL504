@@ -10,7 +10,7 @@ padding:10px;
 }
 .sec-container{
 display:block;
-backkground-color:white;
+background-color:white;
 color:black;
 padding:10px;
 }
@@ -18,16 +18,12 @@ padding:10px;
 background-color:#5892A0;
 padding:10px;
 }
-.options{
-display:flex;
-flex-direction: column;
-width:150px; 
-gap:10px;
-}
+
 
 button{
 border-radius:0.5rem;
-height:45px;
+height:30px;
+padding:2px;
 background-color:#125969;
 color:white;
 }
