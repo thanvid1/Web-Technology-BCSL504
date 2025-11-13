@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Counter</title>
+    <style>
+        body{
+            font-family:Arial,sans-serif;
+            text-align:center;
+            margin-top:50px;
+        }
+        h1{
+            color:#333;
+        }
+        p{
+            font-size:1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thanvi D Acharya(4MW23CS174)</h1>
+    <?php
+    $file='counter.txt';
+    $count=file_exists($file)?(int)file_get_contents($file):0;
+    file_put_contents($file,++$count);
+    ?>
+    <h1>Visitor Counter</h1>
+    <p>Number of visitors:<strong><?php echo $count;?></strong></p>
+    
+</body>
+</html>
