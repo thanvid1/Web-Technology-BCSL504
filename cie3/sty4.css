@@ -1,0 +1,14 @@
+body
+{
+background: pink;
+font-family: "Courier New", monospace;
+}
+h1
+{
+background:maroon;
+color: black;
+padding: 10px;
+}
+p,h3{
+color:maroon;
+}
